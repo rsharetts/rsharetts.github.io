@@ -1,0 +1,5 @@
+---
+  title: "Project"
+---
+  
+  I am using GSS data to explore income inequality.
