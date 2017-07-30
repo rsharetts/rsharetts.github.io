@@ -25,3 +25,4 @@ mean(gss2$educ[gss2$sex == 2], na.rm = TRUE)
 for men and women respectively.
 
   Using a Chi-squared test with 11 degrees of freedom, we find the Chi-squared value to be 15.255 and the p-value to be 0.1711. This tells us that if there were no correlation between sex and income, the data would exist 17.11% of the time. Therefore, there is indeed a correlation between sex and income. 
+  This is the next paragraph.
