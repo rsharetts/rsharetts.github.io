@@ -7,7 +7,7 @@
   According to GSS data, more women than men earn in every income bracket except $4,000 to $4,999. This means that for the data collected by GSS, women largely earn more than men. The variables used to determine this were "sex" and "income." "Sex" refers to the sex of the GSS respondent where 1 is a man and 2 is a woman.  "Income" refers to total family income bracket where 1 refers to an income under $1,000, and ranges to 12 which refers to an income over $25,000. 
     The mean income for men ("sex" 1) was about $19,000 with a standard deviation of 2.4. The mean income for women ("sex" 2) was over $25,000 with a standard deviation of 2.3. 
     
-    ```{r}
+```{r}
 sd(gss2$income[gss2$sex == 1], na.rm = TRUE) 
 ```
 and
