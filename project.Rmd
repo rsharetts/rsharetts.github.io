@@ -20,7 +20,7 @@ mean(gss2$income[gss2$sex == 1], na.rm = TRUE)
 ```
 and
 ```{r}
-mean(gss2$educ[gss2$sex == 2], na.rm = TRUE)
+mean(gss2$income[gss2$sex == 2], na.rm = TRUE)
 ```
 for men and women respectively.
 
