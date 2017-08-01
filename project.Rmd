@@ -41,4 +41,4 @@ and
 chisq.test(gss$health, gss$income)
 ```
 
-In conclusion, we cannot accept the hypothesis that men earn more than women. Though there are correlations between education/income and health/income, the correlation between sex and income reflects, at least according to GSS data, a different outcome than the common sense scenario of men earning more than women. 
+In conclusion, we cannot accept the hypothesis that men earn more than women. Though there are correlations between education/income and health/income, the correlation between sex and income reflects, at least according to GSS data, a different outcome than the common sense scenario of men earning more than women.
