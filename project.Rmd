@@ -36,7 +36,7 @@ chisq.test(gss$sex, gss$income)
 ```{r}
 chisq.test(gss$educ, gss$income)
 ```
-and 
+and
 ```{r}
 chisq.test(gss$health, gss$income)
 ```
