@@ -219,7 +219,27 @@ $(document).ready(function () {
 <pre class="r"><code>mean(gss2$income[gss2$sex == 2], na.rm = TRUE)</code></pre>
 <pre><code>## [1] 10.93204</code></pre>
 <p>for men and women respectively.</p>
-<p>Using a Chi-squared test with 11 degrees of freedom, we find the Chi-squared value to be 15.255 and the p-value to be 0.1711. This tells us that if there were no correlation between sex and income, the data would exist 17.11% of the time. Therefore, there is indeed a correlation between sex and income. This is the next paragraph.</p>
+<p>Using a Chi-squared test with 11 degrees of freedom, we find the Chi-squared value to be 15.255 and the p-value to be 0.1711. This tells us that if there were no correlation between sex and income, the data would exist 17.11% of the time. In other words, there is a 17.11% (relatively low) probability that deviation from the expected results is due to chance only. The R code used to determine this is as follows:</p>
+<p><code>r   chisq.test(gss$sex, gss$income)</code></p>
+<p><code>##    ##    Pearson's Chi-squared test   ##    ## data:  gss$sex and gss$income   ## X-squared = 15.255, df = 11, p-value = 0.1711</code></p>
+<p>It does need to be noted that more women than men were surveyed in this study, which could inflate the responses of women to appear stronger than those of men. Therefore multiple Chi-squared tests were run. The code below was used to determine that there is indeed a positive correlation between education and income as well as between health and income.</p>
+<pre class="r"><code>chisq.test(gss$educ, gss$income)</code></pre>
+<pre><code>## Warning in chisq.test(gss$educ, gss$income): Chi-squared approximation may
+## be incorrect</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  gss$educ and gss$income
+## X-squared = 548.95, df = 220, p-value &lt; 2.2e-16</code></pre>
+<p>and</p>
+<pre class="r"><code>chisq.test(gss$health, gss$income)</code></pre>
+<pre><code>## Warning in chisq.test(gss$health, gss$income): Chi-squared approximation
+## may be incorrect</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  gss$health and gss$income
+## X-squared = 138.45, df = 33, p-value = 7.129e-15</code></pre>
 
 <p>Copyright &copy; 2017 Ryan Sharetts, Inc. All rights reserved.</p>
 
